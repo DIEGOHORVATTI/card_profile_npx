@@ -1,6 +1,6 @@
 # Cartão de visita Npx
 
-![Example npx danrowe](example.jpg)
+<img src="https://i.imgur.com/RclP9B7.png" />
 
 Meu cartão de visita Npx para se conectar comigo através do terminal.
 

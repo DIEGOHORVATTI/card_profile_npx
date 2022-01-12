@@ -1,6 +1,6 @@
 {
   "name": "diegohorvatti",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "card de perfil pessoal nodejs.",
   "main": "index.js",
   "bin": {
