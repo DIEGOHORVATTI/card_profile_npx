@@ -1,6 +1,6 @@
 # Cartão de visita Npx
 
-<img src="https://i.imgur.com/RclP9B7.png" />
+<img src="https://camo.githubusercontent.com/bc9182361235c6d7d7765e27e327225b55c68098bd8f3e63759f03418ceb4a18/68747470733a2f2f692e696d6775722e636f6d2f52636c503942372e706e67" />
 
 Meu cartão de visita Npx para se conectar comigo através do terminal.
 
