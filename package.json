@@ -1,0 +1,34 @@
+{
+  "name": "danrowe",
+  "version": "2.0.7",
+  "description": "Personal business card for Daniel Rowe (@DanRowe).",
+  "main": "index.js",
+  "bin": {
+    "danrowe": "cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DanRowe/npx-card.git"
+  },
+  "scripts": {
+    "test": "node cli.js"
+  },
+  "keywords": [
+    "card",
+    "business card",
+    "npx",
+    "npx card",
+    "npx business card"
+  ],
+  "author": "Daniel Rowe (https://drowe.dev)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DanRowe/npx-card/issues"
+  },
+  "dependencies": {
+    "boxen": "^5.0.0",
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "minimist": "^1.2.5"
+  }
+}
