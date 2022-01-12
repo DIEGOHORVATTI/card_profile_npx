@@ -1,10 +1,10 @@
 {
-  "name": "Div",
+  "name": "diegohorvatti",
   "version": "2.0.7",
   "description": "card de perfil pessoal nodejs.",
   "main": "index.js",
   "bin": {
-    "Div": "cli.js"
+    "div": "cli.js"
   },
   "repository": {
     "type": "git",
