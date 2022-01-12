@@ -4,14 +4,14 @@
   "description": "card de perfil pessoal nodejs.",
   "main": "index.js",
   "bin": {
-    "div": "cli.js"
+    "card": "cli.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/DIEGOHORVATTI/card_profile_npx.git"
   },
   "scripts": {
-    "div": "node cli.js"
+    "card": "node cli.js"
   },
   "keywords": [
     "card",
