@@ -2,7 +2,7 @@
   "name": "diegohorvatti",
   "version": "2.0.9",
   "description": "card de perfil pessoal nodejs.",
-  "main": "index.js",
+  "main": "cli.js",
   "bin": {
     "card": "cli.js"
   },
@@ -10,6 +10,10 @@
     "type": "git",
     "url": "https://github.com/DIEGOHORVATTI/card_profile_npx.git"
   },
+  "files": [
+    "cli.js",
+    "pkg.js"
+  ],
   "scripts": {
     "card": "node cli.js"
   },
