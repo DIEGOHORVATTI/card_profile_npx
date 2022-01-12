@@ -6,6 +6,10 @@ const http = require('http');
 const inquirer = require('inquirer');
 const opn = require('opn');
 
+const social_networks = require('./lib/social_networks')
+const labels = require('./lib/labels')
+const names = require('./lib/names')
+
 const card = require("./lib/card");
 
 module.exports = ({ json }) => (json ? JSON.stringify(data) : card);
@@ -37,16 +41,16 @@ function links() {
 
       switch(action) {
         case "Git hub ->":
-          opn(`${link[0]}${nomes[2]}`);
+          opn(`${social_networks[0]}${names[2]}`);
           break;
         case "npm ->":
-          opn(`${link[1]}${nomes[3]}`);
+          opn(`${social_networks[1]}${names[3]}`);
           break;
         case "Linkdin ->":
-          opn(`${link[2]}${nomes[4]}`);
+          opn(`${social_networks[2]}${names[4]}`);
           break;
         case "Website ->":
-          opn(`${link[3]}${nomes[6]}`);
+          opn(`${social_networks[3]}${names[6]}`);
           break;
         case "Sair":
           console.log(chalk.bgGreen.black('Obrigado por me visitar<3'))
