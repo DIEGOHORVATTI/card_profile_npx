@@ -11,7 +11,7 @@
     "url": "https://github.com/DIEGOHORVATTI/card_profile_npx.git"
   },
   "scripts": {
-    "test": "node cli.js"
+    "div": "node cli.js"
   },
   "keywords": [
     "card",
