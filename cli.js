@@ -56,4 +56,3 @@ const execute = () => {
     })
 }
 module.exports = execute
-execute()
