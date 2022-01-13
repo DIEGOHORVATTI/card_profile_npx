@@ -1,64 +1,58 @@
 #!/usr/bin/env node
-const minimist = require('minimist');
-const chalk = require('chalk');
-const pkg = require('.');
-const http = require('http');
-const inquirer = require('inquirer');
-const opn = require('opn');
+const minimist = require('minimist')
+const chalk = require('chalk')
+const pkg = require('./lib/pkg')
+const http = require('http')
+const inquirer = require('inquirer')
+const opn = require('opn')
 
-const card = require("./lib/card");
+const social_networks = require('./lib/social_networks')
+const labels = require('./lib/labels')
+const names = require('./lib/names')
 
-module.exports = ({ json }) => (json ? JSON.stringify(data) : card);
+const card = require('./lib/card')
+const { exec } = require('child_process')
 
 const options = {
-  alias: { json: "j" },
-};
+  alias: { json: 'j' },
+}
 
-const argv = minimist(process.argv.slice(2), options);
-
-function links() {
+const argv = minimist(process.argv.slice(2), options)
+const execute = () => {
+  console.log(pkg(argv))
   inquirer
     .prompt([
       {
         type: 'list',
         name: 'action',
         message: 'Abrir:',
-        choices: [
-          'Git hub ->',
-          'npm ->',
-          'Linkdin ->',
-          'Website ->',
-          'Sair',
-        ],
+        choices: ['Git hub ->', 'npm ->', 'Linkdin ->', 'Website ->', 'Sair'],
       },
     ])
     .then((answer) => {
       const action = answer['action']
 
-      switch(action) {
-        case "Git hub ->":
-          opn(`${link[0]}${nomes[2]}`);
-          break;
-        case "npm ->":
-          opn(`${link[1]}${nomes[3]}`);
-          break;
-        case "Linkdin ->":
-          opn(`${link[2]}${nomes[4]}`);
-          break;
-        case "Website ->":
-          opn(`${link[3]}${nomes[6]}`);
-          break;
-        case "Sair":
+      switch (action) {
+        case 'Git hub ->':
+          opn(`${social_networks[0]}${names[2]}`)
+          break
+        case 'npm ->':
+          opn(`${social_networks[1]}${names[3]}`)
+          break
+        case 'Linkdin ->':
+          opn(`${social_networks[2]}${names[4]}`)
+          break
+        case 'Website ->':
+          opn(`${social_networks[3]}${names[6]}`)
+          break
+        case 'Sair':
           console.log(chalk.bgGreen.black('Obrigado por me visitar<3'))
           process.exit()
-          break;
+          break
         default:
-          console.log("informe uma opção valida");
-          break;
+          console.log('informe uma opção valida')
+          break
       }
-
     })
 }
-
-console.log(pkg(argv));
-links()
+module.exports = execute
