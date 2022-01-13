@@ -4,10 +4,28 @@
 
 Meu cartão de visita Npx para se conectar comigo através do terminal.
 
-```sh
+```
 npx diegohorvatti
 ```
+or
+```
+git clone https://github.com/DIEGOHORVATTI/card_profile_npx.git
+```
+```
+cd ./card_profile_npx
+```
 
+```
+node cli.js 
+```
+or
+```
+yarn card
+```
+or
+```
+nmp run card
+```
 ------
 
 ## Completo Crie o seu próprio
